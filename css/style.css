@@ -1,0 +1,126 @@
+/* Start Global CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Neo Sans Arabic Regular', 'Roboto', Arial, sans-serif;
+	color: rgb( 53, 60, 65 );
+    font-size: 16px;
+	height: 100%;
+	background-color: rgb( 237, 240, 244 );
+	margin: 0;
+    direction: rtl;
+}
+
+a {
+	color: rgb( 53, 60, 65 );
+	text-decoration: none;
+}
+a:hover {
+	color: rgb( 112, 169, 243 );
+	text-decoration: none;
+}
+a, a:hover {
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+}
+
+/* End Global CSS */
+
+/* Start Navbar CSS */
+
+.navlinks {
+    background-color: rgb( 112, 169, 243 );
+    color: rgb( 237, 240, 244 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    font-size: 18px;
+}
+
+.navlinks .links, .navlinks .alt-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks .links {
+    float: right;
+}
+
+.navlinks .alt-links {
+    float: left;
+}
+
+.navlinks .links li, .navlinks .alt-links li {
+    float: right;
+}
+
+.navlinks ul li a {
+    color: rgb( 237, 240, 244 );
+}
+
+.navlinks ul li a:hover {
+    color: rgb( 53, 60, 65 );
+}
+
+.navlinks .links li a {
+    margin: 0 10px;
+}
+
+.navlinks .links li a::before {
+    font-family: 'Font Awesome 5 Pro';
+    margin-left: 3px;
+}
+
+.navlinks .links li a[href="/"]::before, .navlinks .links li a[href="/forum"]::before {
+    content: '\f80a';
+}
+
+.navlinks .links li a[href="/calendar"]::before {
+	content: '\f073';
+}
+.navlinks .links li a[href="/events"]::before {
+	content: '\f736';
+	 }
+.navlinks .links li a[href="/gallery/index.htm"]::before {
+	content: '\f302';
+	 }
+.navlinks .links li a[href="/publi"]::before {
+	content: '\f2bb';
+	 }
+.navlinks .links li a[href="/faq"]::before {
+	content: '\f128';
+	 }
+.navlinks .links li a[href="/search"]::before {
+	content: '\f002';
+	 }
+.navlinks .links li a[href="/memberlist"]::before {
+	content: '\f0c0';
+	 }
+.navlinks .links li a[href="/groups"]::before {
+	content: '\f63d';
+	 }
+.navlinks .links li a[href="/profile?mode=editprofile"]::before {
+	content: '\f406';
+	 }
+.navlinks .links li a[href="/privmsg?folder=inbox"]::before {
+	content: '\f0e0';
+	 }
+.navlinks .links li a[href="/register"]::before {
+	content: '\f234';
+	 }
+.navlinks .links li a[href="/login"]::before {
+	/*content: '\f090';*/
+	content: '\f2f6';
+	 }
+.navlinks .links li a[id="logout"]::before {
+	/*content: '\f08b';*/
+	content: '\f2f5';
+	 }
+
+/* End Navbar CSS */
